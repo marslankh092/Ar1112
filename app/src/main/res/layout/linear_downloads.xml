@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="13dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="13dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/linear_download_video_card"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="9dp"
+        app:cardElevation="9dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+   <!--         <VideoView
+                android:id="@+id/linear_download_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true" />-->
+
+
+
+            <ImageView
+                android:id="@+id/linear_download_video_play"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@drawable/ic_baseline_play_circle_outline_24"
+                android:layout_centerInParent="true"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/linear_download_video_time"
+                android:layout_width="46dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/round_corner_buttons"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+
+                android:text="04:60 "
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/linear_download_video_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_toRightOf="@+id/linear_download_video_card"
+        android:layout_toLeftOf="@+id/linear_download_video_new"
+
+        android:text="Video name "
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_download_video_name"
+        android:layout_toRightOf="@+id/linear_download_video_card"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="9dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Size "
+            android:textColor="#60000000"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/linear_download_video_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+
+            android:text="46 MB "
+            android:textColor="#60000000"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/linear_download_video_options_select"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp" />
+
+
+    <ImageView
+        android:id="@+id/linear_download_video_options"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:tint="@color/black" />
+
+    <CheckBox
+        android:id="@+id/linear_download_video_select"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:buttonTint="#1B94AB"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/linear_download_video_new"
+        android:layout_width="46dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="3sp"
+        android:layout_toLeftOf="@+id/linear_download_video_options_select"
+        android:background="@drawable/round_border_buttons"
+
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="New "
+        android:textColor="@color/colorDarkOrange"
+        android:textSize="9sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
